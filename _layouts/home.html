@@ -8,12 +8,12 @@ layout: default
   </head>
   <div class="home-title">
     <p class="home-heading">{{ site.title }}</p>
-    <!-- <p class="home-sub-heading">{{- site.description | escape -}}</p> -->
-    <div class="home-sub-heading mt-0">
+    <p class="home-sub-heading">{{- site.description | escape -}}</p>
+    <!-- <div class="home-sub-heading mt-0">
       <a style="color:inherit" href="{{ site.url }}/about.html">
-        {{- site.description | escape -}}
+        About
       </a>
-    </div>
+    </div> -->
   </div>
 
   {%- if site.posts.size > 0 -%}

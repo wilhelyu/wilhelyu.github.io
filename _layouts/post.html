@@ -11,7 +11,7 @@ layout: default
     <script type="text/javascript" async
       src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
     </script>
-    <title>{{ page.title }}</title>
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   </head>
   <header class="post-header">
     <div class="post-back">
@@ -39,7 +39,21 @@ layout: default
         }}</span></span
       >
       {%- endif -%}
+      <span class="busuanzi_container_page">
+        <span id="busuanzi_container_page_pv">
+          •
+          <span id="busuanzi_value_page_pv"></span> View
+        </span>
+      </span>
     </p>
+    {%- if page.last_modified_at -%}
+    <div class="ant-alert">
+      {{ "上次更新时间：" | append: page.last_modified_at }}
+    </div>
+    <!-- {{ "```
+    上次更新时间：" | append: page.last_modified_at | append: "
+      ```" | markdownify }} -->
+    {%- endif %}
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
