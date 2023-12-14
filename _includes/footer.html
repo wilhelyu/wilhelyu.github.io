@@ -1,22 +1,40 @@
 <footer class="site-footer h-card">
-    <data class="u-url" href="{{ "/" | relative_url }}"></data>
-    <div class="wrapper">
-      <div class="footer-col-wrapper">
-        <div class="footer-col">
-          <ul class="contact-list">
-            <li class="p-name">
-              {%- if site.author -%}
-                <a class="black-link" href="{{ site.url }}/about.html">
-                  {{ site.author | escape }} 
-                </a>
-              {%- endif -%}
-              </li>
-              {%- if site.email -%}
-              <li>
-              <a class="u-email black-link" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-              {%- endif -%}
-          </ul>
-        </div>
+  <data class="u-url" href="{{ " /" | relative_url }}"></data>
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <ul class="contact-list">
+          <li class="p-name">
+            {%- if site.author -%}
+            <a class="black-link" href="{{ site.url }}/about.html">
+              {{ site.author | escape }}
+            </a>
+            {%- endif -%}
+          </li>
+          {%- if site.email -%}
+          <li>
+            <a class="u-email black-link" href="mailto:{{ site.email }}">{{ site.email }}</a>
+          </li>
+          {%- endif -%}
+        </ul>
       </div>
     </div>
-  </footer>
+  </div>
+</footer>
+
+<!-- MathJax -->
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<!-- busuanzi -->
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!-- viewerjs -->
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/viewerjs@1.10.4/dist/viewer.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/viewerjs@1.10.4/dist/viewer.min.js"></script> -->
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/viewerjs@1.10.4.viewer.min.css">
+<script src="{{ site.baseurl }}/assets/js/viewerjs@1.10.4.viewer.min.js"></script>
+<script>
+  var el = document.getElementById('post');
+  if (el) new Viewer(el);
+</script>
