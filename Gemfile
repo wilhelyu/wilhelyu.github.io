@@ -8,4 +8,4 @@ gem "webrick", "~> 1.8"
 gem 'jekyll'
 gem "jekyll-pdf-embed"
 gem 'jekyll-feed'
-gem 'tzinfo-data'
+# gem 'tzinfo-data'

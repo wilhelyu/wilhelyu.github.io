@@ -7,7 +7,7 @@ description: > # this means to ignore newlines until "show_excerpts:"
 favicon: "./favicon.ico" # set the favicon of the site
 show_excerpts: false # set to true to show excerpts on the homepage
 permalink: /:categories/:year/:title:output_ext
-timezone: Asia/Shanghai
+# timezone: Asia/Shanghai
 highlighter: none
 
 # Moving date format
@@ -55,10 +55,6 @@ excludes:
   - Gemfile
   - Gemfile.lock
   - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
   - README.md
   - LICENSE.txt
 
