@@ -24,7 +24,7 @@ layout: default
       </time>
       {% if page.categories %}
       {% for category in page.categories %} •
-      <a style="color:inherit" href="{{ site.url }}/path-to-category-index/{{ category | slugify }}/index.html">{{
+      <a style="color:inherit" href="{{ site.url }}/category/{{ category | slugify }}/index.html">{{
         category
         }}</a>
       {% endfor %}
