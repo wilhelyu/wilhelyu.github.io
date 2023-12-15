@@ -1,8 +1,8 @@
 ---
 # layout: post
-title: First Post New
+title: First Post
 # author: Wilhel Yu
-categories:
+categories: [test]
 tags:
 ---
 

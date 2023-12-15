@@ -9,3 +9,8 @@ gem 'jekyll'
 gem "jekyll-pdf-embed"
 gem 'jekyll-feed'
 # gem 'tzinfo-data'
+
+group :jekyll_plugins do
+  gem "jekyll-paginate"
+  gem "jekyll-category-pages"
+end
