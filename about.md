@@ -1,5 +1,6 @@
 ---
 layout: about
+permalink: /about
 ---
 
 ### About Blog
